@@ -9,3 +9,61 @@ git push
 checking if push is working or not
  
 checking if pull is working
+
+git init
+git status
+git add filename
+git rm --cached
+git commit -m "message"
+git log
+git restore
+
+HEAD -- Means, it is pinter which stays on the current version of the file in the git version control system. whatever recent commit you have done, the HEAD will be pointed to that commit only.
+
+git log -- shows full details of the log
+git log --oneline --> shows only the id of the commit and commit message
+git log --oneline --pretty --> shows full log but the commit id will be shortened.
+
+git config --global user.name "Name"
+git config --global user.email "Email"
+
+BRANCH in git --
+
+Root User -- Branch --
+
+Main root - MASTER Branch
+When there is a folder created, that is called a Master Branch
+Master Branch -- New Branch (Developement Branch) -- whatever code is there i new branch comes from the root branch and whatever changes I am doing in this branch, it doesn't affect the main/master branch.
+
+Main Project -- create a new branch -- branch is a separate copy of the same repo, and you can make whwtever changes you want and it will not affect the Master Branch.
+
+
+So how does this branching works:
+
+When we are creating a new branch from the Master/Main branch, all the code or current repo data moves to the new branch which we created, so now if we change any change in the file of the new branch, it will be there only int eh created branch and not in the main branch, as it is a complete separate branch from the MAster/Main branch.
+
+
+So dev changes will stay in dev branch and the master branch will be holding the changes which it curently has overall.
+
+git branch --> command which shows the current branch on which git is.
+
+github, gitlab, bitbucket -- underlying Logic is GIT, and these are different companies using Git, That's it.
+
+
+git clone "use the http;// url give in the repository code dropdown"
+to clone the repo to your folder -- personal folder-- only public repos can be cloned
+
+
+ubuntu@ip-172-31-36-60:~/howudooinng-git-profile/devops-batch-4$ git remote -v
+origin  https://github.com/howudooinng/devops-batch-4.git (fetch)
+origin  https://github.com/howudooinng/devops-batch-4.git (push)
+ubuntu@ip-172-31-36-60:~/howudooinng-git-profile/devops-batch-4$
+
+
+git remote -v shows the orgin for Push and fetch for the repo
+
+
+clone vs fork -
+
+clone create  the local version of the remote repo
+fork createa the repo under your name -- as it is copy is there of github and you can work on that and move the changes to the original repo
