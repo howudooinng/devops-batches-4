@@ -1,0 +1,27 @@
+A repo has branches. 
+We never do any commit to the MASTER Branch.
+Git add, Git Commit is never done at the Master branch --> never commit to this branch
+Master branch is the protected branch and never touch that at industry level.
+
+Master - has the protected codebase(Stable release, latest stable release)
+QA team checks the Master --> Staging Branch -- multiple people come and test -- if the staging is passed by the QA and then it becomes the prod and then it becomes the Master codebase.
+To reach Staging branch -- we have the DEV branch -- me as a developer will pick the code form there, that branch where development is done.
+A Developer takes a pull from the dev branch -- and works on the Feature branch of that dev branch.
+
+BRANCHING STRATEGIES:
+
+MASTER 
+STAGING 
+DEVELOP -- FEATURE1, FEATURE2, FEATURE3
+
+HOTFIX -- IT IS DONE WHEN THERE IS A VERY CRITICAL ERROR AND THEN A BRANCH IS TAKEN FROM THE STAGING OR MASTER AND THEN MERGE IT DIRECTLY TO MASTER OR GO THROUGH STAGING TO MASTER AFTER RESOLUTION.
+
+MNC'S USE JIRA -- THEY CREATE TICKETS 
+
+MASTER -- PRD
+STAGING -- STG
+DEVELOP -- DEV
+
+HEAD - POINTS LATEST COMMIT
+
+SO EACH BRANCH HAS A HEAD AT THE LATEST COMMIT OF THAT BRANCH.
